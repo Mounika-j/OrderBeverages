@@ -1,0 +1,48 @@
+.beverage-details-wrapper{
+    height: calc(100% - 40px);
+    border: 1px solid #d5d2d2;
+    margin: 20px;
+    display: flex;
+    @media (max-width: 767px){
+        height: auto;
+        flex-direction: column-reverse;
+        .sidebar-wrapper{
+            width: calc(100% - 40px);
+        }
+    }
+    .sidebar-wrapper{
+        height: calc(100% - 42px);
+        width: 300px;
+        margin: 20px;
+        .list-od-beverage{
+            height: calc(100% - 110px);
+            margin: 0;
+            padding: 20px 30px;
+            list-style: none;
+            border: 1px solid #d5d2d2;
+            overflow-y: auto;
+            .items a{
+                display: block;
+                padding: 20px;
+                background-color: #b9b9b9;
+                color: #fff;
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 10px;
+                text-decoration: none;  
+            }
+        }
+    }
+}
+.sidebar-title{
+    text-align: center;
+    color: #f39120;
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

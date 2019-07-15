@@ -1,0 +1,90 @@
+html, #root {
+    height: 100vh;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+}
+.beverage-wrapper,.beverage-form,.form-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beverage-wrapper{
+    height: 100%;
+    .inner-wrap{
+        width: 400px;
+        height: 350px;
+        margin: 0 auto;
+        background-color: rgba(95, 91, 91, 0.1);
+        box-shadow: 0px 1px 4px rgba(0,0,0,0.35);
+        border-radius: 5px;
+        .title{
+            text-align: center;
+            color: #f39120;
+            margin: 20px 20px;
+            font-size: 24px;
+        }
+        .beverage-form{
+            height: calc(100% - 65px);
+            padding: 30px;
+            .form-label{
+                width: 100%;
+                font-size: 16px;
+                justify-content: space-between;
+                &:first-child{
+                    margin-bottom: 15px;
+                }
+                input{
+                    width: 77.5%;
+                    border: 1px solid #d5d2d2;
+                    padding: 9px 12px;
+                    margin-left: 15px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                    &:focus,&:active{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            .submit-btn{
+                color: #fff;
+                margin-top: 35px;
+                background-color: #f39120;
+                border: 0;
+                padding: 15px 25px;
+                font-size: 16px;
+                border-radius: 4px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .beverage-form,.inner-wrap{
+        flex-direction: column;
+    }
+}
+.beverage_selector{
+    width: 77.1%;
+    .beverage_dropdown__control{
+        border: 1px solid #d5d2d2;
+        min-height: 44px;
+        border-radius: 4px;
+        box-shadow: none;
+        &:hover{
+            border-color:#d5d2d2;
+        }
+        
+    }
+    .beverage_dropdown__option--is-focused,.beverage_dropdown__option--is-selected{
+        background-color: #f39120;
+        color: #fff;
+    }
+}
+
+.error-message{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: red;
+}

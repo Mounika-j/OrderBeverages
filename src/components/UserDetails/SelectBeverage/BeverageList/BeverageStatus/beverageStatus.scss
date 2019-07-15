@@ -1,0 +1,57 @@
+.status-wrapper{
+    margin: 20px;
+    width: calc(100% - 350px);
+    
+    .status-container{
+        display: flex;
+        justify-content: space-between;
+        height: calc(100% - 110px);
+        padding: 20px 30px;
+        border: 1px solid #d5d2d2;
+        background: #f8f8f8;
+        .subtitle{
+            width: 30%;
+            h2{
+                text-transform: uppercase;
+                font-size: 18px;
+                text-align: center;
+            }
+            .status-of-beverage{
+                height: calc(100% - 50px);
+                overflow-y: auto;
+                .items{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+                    .drink-name{
+                        display: inline-block;
+                        padding: 15px 20px;
+                        background-color: #f39120;
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                    .person-name{
+                        padding: 10px 20px;
+                        background-color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        height: auto;
+        width: calc(100% - 40px);
+        .status-container{
+            height: auto;
+            width: 100%;
+            flex-direction: column;
+            .subtitle{
+                width: 100%;
+                .status-of-beverage{
+                    margin: 20px 0px;
+                }
+            }
+        }    
+    }
+}

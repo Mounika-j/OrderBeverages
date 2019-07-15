@@ -1,0 +1,30 @@
+.modal-open .modal{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    .modal-dialog.modal-wrapper{
+        max-width: 500px;
+        width: 500px;
+        .modal-content{
+            .modal-header{
+                border: 0;
+                .modal-title{
+                    color: #f39120;
+                }
+            }
+            .modal-body{
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+            .modal-footer{
+                justify-content: center;
+                border: 0;
+                .btn.btn-primary{
+                    padding: 10px 35px;
+                    background-color: #f39120;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
